@@ -23,6 +23,15 @@ There's two versions of the code, educational in folder /base and more advanced 
  dfs_search /path_to_file number_of_lines
 ```
 
+Code in _/dfs\_omp\_batch.cpp_ contains more tricks to speed up computation: look up tables, computations with multiple bytes at once.
+Main parameters are following:
+```cpp
+#define M   7    // number of stones
+#define N   31   // size of field
+#define PAD 1    // field padding
+
+#define MAX_NUM 128   // maximum score possible
+```
 ## Input file format
 - line 1:
   integer K: number of problem instances (needed only for base version)
