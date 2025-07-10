@@ -18,14 +18,14 @@ There's two versions of the code, educational in folder /base and more advanced 
 ```sh
  dfs_search /path_to_file label_string
 ```
-- Run efficient version:
+- Run latest version:
 ```sh
  dfs_search /path_to_file number_of_lines
 ```
 
 ## Input file format
 - line 1:
-  integer K: number of problem instances (needed for base version)
+  integer K: number of problem instances (needed only for base version)
   > K
 - lines: 2 ... K+1:
 K lines with M pairs of integers: 1's coordinates
@@ -36,6 +36,8 @@ When M < 7 it is possible to check every 1's combination.
 After M=7 it is not possible to do in reasonable time on laptop.
 It turned out that greedy approach works fine in practice.
 One can use precomputed database of results for M-k sorted by score and then check solutions for the rest k positions.
+
+For efficient generation of initial stone positions my [another project](https://github.com/mihael-tunik/CombsOnGrid) can be used.
 
 ## Search space
 In experiments for practical purposes **search space was truncated** by following heuristic rule:
