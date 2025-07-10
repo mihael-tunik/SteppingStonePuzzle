@@ -12,17 +12,22 @@ Main program processes problem *instances*, combinations of 1's on square NxN gr
 g++, OpenMP
 
 ## Usage
+There's two versions of the code, educational in folder /base and more advanced version in the folder /opt. Both are command line utilities.
 - Compile code with **make**
-- Run:
+- Run base version:
 ```sh
  dfs_search /path_to_file label_string
-```   
+```
+- Run efficient version:
+```sh
+ dfs_search /path_to_file number_of_lines
+```
 
 ## Input file format
 - line 1:
-  integer K: number of problem instances
+  integer K: number of problem instances (needed for base version)
   > K
-- lines: 2 ... K+1:   
+- lines: 2 ... K+1:
 K lines with M pairs of integers: 1's coordinates
    > x1 y1 x2 y2 x3 y3 ...
 
