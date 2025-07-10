@@ -1,4 +1,4 @@
-SRC = ${CURDIR}/src
+SRC = ${CURDIR}
 CC = g++
 CFLAGS = -Ofast -fopenmp
 
